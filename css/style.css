@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p, ul{
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+}
+header{
+    background-image: url(../image/banner-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    position: relative;
+}
+.navigation ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+.navigation ul li{
+    color: white;
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    padding: 0 !important;
+    margin-left: 30px;
+    position: relative;
+    
+}
+.nav-link:hover{
+    color: #ffffff;
+}
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #008ed6;
+    transition: .4s all ease-in-out;
+    color: #ffffff;
+}
+.nav-link::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background-color: #008ed6;
+    transition: .4s all ease-in-out;
+    color: #ffffff;
+}
+
+.nav-link:hover::before{
+    width: 48%;
+}
+.nav-link:hover::after{
+    width: 48%;
+}
+header h6{
+    color: #008ed6;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+header h1{
+    color: #ffffff;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    padding: 20px 0;
+}
+header p{
+    color: #999999;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+}
+header .height{
+    height: 80vh;
+    padding-top: 40px;
+    align-items: center;
+}
+header .btn-custom{
+    margin-top: 50px;
+    color: #ffffff;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: #999999 1px solid;
+    border-radius: 5px;
+    padding: 15px 20px;
+}
+header .btn-custom.view{
+    background-color: transparent;
+    border: #999999 1px solid;
+    margin-left: 15px;
+}
+header .btn-custom:hover{
+    background-color: #008ed6;
+    border: #008ed6 1px solid;
+    color: #ffffff;
+}
+header .height img{
+    position: absolute;
+    bottom: 0;    
+}
+.img-fluid{
+    height: auto;
+}
+.feature h6{
+    color: #008ed6;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+.feature h3{
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 30px;
+    font-style: normal;
+    padding-bottom: 20px;
+    
+}
+.blue_line{
+    position: relative;
+    width: 70px;
+    height: 2px;
+    margin-bottom: 20px;
+    margin: auto;
+    display: block;
+}
+.blue_line span::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #008ed6;
+    transition: .4s all ease-in-out;
+}
+.blue_line span::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background-color: #008ed6;
+    transition: .4s all ease-in-out;
+}
+
+.feature:hover span::before{
+    width: 47%;
+}
+.feature:hover span::after{
+    width: 47%;
+}
+.feature_content{
+    justify-content: center;
+    padding: 20px;
+}
+.feaure_icon{
+    color: #008ed6;
+    height: 70px;
+    width: 70px;
+    background-color: transparent;
+    border: #e0e0e0 1px solid;
+    border-radius: 50%;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.feature.feaure_icon{}
+.feature_content h2{
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 24px;
+    font-style: normal;
+    padding-bottom: 10px;
+}
+.feature_content p{
+    color: #999999;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+.line span{
+    display: block;
+    height: 2px;
+    background-color: #ededed;
+    width: 100%;
+}
+.beautiful_device{
+    padding: 50px 0 0;
+}
+.beautiful_device .height{
+    align-items: center;
+}
+.beautiful_device img{}
+.beautiful_device h6{
+    color: #008ed6;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+.beautiful_device h3{
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 30px;
+    font-style: normal;
+    padding-bottom: 20px;
+}
+.beautiful_device p{
+    color: #999999;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    padding: 20px 0;
+}
+.beautiful_device ul{
+    margin-top: 15px;
+}
+.beautiful_device ul li{
+    display: flex;
+    margin: auto;
+}
+.beautiful_device ul li i{
+    
+    width: 20px;
+    height: 20px;
+    color: #008ed6;
+    margin: 10px 20px 5px 0;
+    font-size: 15px;
+    text-align: center;
+    
+}
+.beautiful_device ul li h6{
+    color: #1a1a1a;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 0;
+    margin: 8px 0;
+    
+}
+.beautiful_device:hover span::before{
+    width: 47%;
+}
+.beautiful_device:hover span::after{
+    width: 47%;
+}
+.customize{
+    padding: 50px 0 0;
+    background: #f2f2f2;
+}
+.customize .height{
+    align-items: center;
+}
+.customize h6{
+    color: #008ed6;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+.customize h3{
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 30px;
+    font-style: normal;
+    padding-bottom: 20px;
+}
+.customize p{
+    color: #999999;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    padding: 20px 0;
+}
+.customize:hover span::before{
+    width: 47%;
+}
+.customize:hover span::after{
+    width: 47%;
+}
+.pricing{
+    background-image: url(../image/t-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 0;
+}
+.pricing h6{
+    color: #008ed6;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+.pricing h3{
+    color: #fff;
+    font-weight: 600;
+    font-size: 30px;
+    font-style: normal;
+    padding-bottom: 20px;
+}
+.pricing:hover span::before{
+    width: 47%;
+}
+.pricing:hover span::after{
+    width: 47%;
+}
+.plan{
+    padding-top: 10px;
+    padding-right: 70px;
+}
+.plan p{
+    font-size: 20px;
+    font-style: italic;
+    font-size: 400;
+    color: #fff;
+    padding-top: 60px;
+    
+}
+.client_details{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+.client_image{ 
+    margin-right: 30px;
+}
+.client_details h6{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: 0;
+    letter-spacing: 0;
+}
+.client_details p{
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+    font-style: normal;
+    padding: 0;
+}
+.client_name{
+    align-items: center;
+}
+.owl-dots{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.owl-dots .owl-dot span{
+    width: 7px;
+    height: 7px;
+    display: block;
+    background-color: transparent;
+    border: #aeaeae 1px solid;
+    border-radius: 50%;
+    margin: 3px;
+}
+.owl-dots .owl-dot.active span{
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border: #ffffff 1px solid;
+}
+.theme{
+    background-color: #15141a;
+    padding: 30px 0;
+    align-items: center;
+}
+.theme .height{
+    align-items: center;
+}
+.theme h2{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+    font-style: normal;
+    padding: 0;
+}
+.theme h2 span{
+    font-weight: 300;
+}
+.theme .btn-custom{
+    
+    color: #ffffff;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: #999999 1px solid;
+    border-radius: 5px;
+    padding: 15px 20px;
+}
+.theme .btn-custom.view{
+    background-color: transparent;
+    border: #999999 1px solid;
+    margin-left: 15px;
+}
+.theme:hover .btn-custom{
+    background-color: #008ed6;
+    border: #008ed6 1px solid;
+    color: #ffffff;
+}
